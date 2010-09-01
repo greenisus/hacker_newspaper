@@ -36,8 +36,8 @@ def render_partial_story(story_number, header_number)
 	</p>
 	<% end %>
 
-	<p>
-	  <strong><a href="<%= story.url %>"><%= story.domain %></a></strong>
+	<p>	
+	  <strong><a href="<%= story.url %>"><%= story.domain %></a> - <a href = "http://news.ycombinator.com/item?id=<%= story_number %>">Comments</a></strong>
 	</p>
 PARTIAL
   ERB.new(partial).result(binding)
